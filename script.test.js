@@ -47,16 +47,14 @@ test('get available risks',() => {
 })
 
 
-
-
-var fireRisk = new Risk('Fire', 50);
-var theftRisk = new Risk('Theft', 100);
-var availableRisks = [fireRisk, theftRisk];
-var copmanyInstance = new InsuranceCompany();
+let fireRisk = new Risk('Fire', 50);
+let theftRisk = new Risk('Theft', 100);
+let availableRisks = [fireRisk, theftRisk];
+let copmanyInstance = new InsuranceCompany();
 copmanyInstance.setAvailableRisks(availableRisks);
 
-var policyStartDate = new Date(2019, 0, 1);
-let policy = copmanyInstance.sellPolicy('Garage', policyStartDate, 12, [theftRisk]);
+let policyStartDate = new Date(2020, 0, 1);
+let policy = copmanyInstance.sellPolicy('Garage', policyStartDate, 12, [fireRisk,theftRisk]);
 
 test('sell policy',() => {
 	expect(policy).toMatchObject({
@@ -76,5 +74,63 @@ test('policy get valid from Date',() => {
 })
 
 test('policy get valid till Date',() => {
-	expect(policy.validTill.toString()).toContain('Dec 31 2019'); //will compare two strings instead of Date objects to avoid native js 'one day off' bug
+	expect(policy.validTill.toString()).toContain('Dec 31 2020'); //will compare Strings instead of Date objects to avoid native js 'one day off' bug
 })
+
+test('policy get current risks array',() => {
+	expect(policy.insuredRisks).toEqual([{_name: 'Fire', _yearlyPrice: 50}, {_name: 'Theft', _yearlyPrice: 100}]);
+})
+
+/*
+
+test('get policy for "Garage" object for 5 March 2019',() => {
+	var dateMarch = new Date(2019, 4, 5);
+	expect(copmanyInstance.getPolicy('Garage',dateMarch)).not.toHaveLength(0);
+})
+
+test('company get all sold policies',() => {
+	let date1 = new Date(2019, 2, 27);
+	let date2 = new Date(2019, 4, 18);
+	let policy2 = copmanyInstance.sellPolicy('Garage', date1, 1, [fireRisk]);
+	let policy3 = copmanyInstance.sellPolicy('Garage', date2, 3, [fireRisk,theftRisk]);
+
+	expect(copmanyInstance.soldPolicies).toHaveLength(3);
+})
+
+test('get policy for "Garage" object for 5 March 2019',() => {
+	var dateMarch = new Date(2019, 4, 5);
+	expect(copmanyInstance.getPolicy('Garage',dateMarch)).not.toHaveLength(0);
+})
+*/
+
+test('can not sell two policies with the same effective period',() => {
+	let policy2 = copmanyInstance.sellPolicy('Garage', policyStartDate, 12, [fireRisk,theftRisk]);
+	expect(copmanyInstance.soldPolicies.length).toBe(1);
+})
+
+test('can not sell policy with effective period inside other policy period',() => {
+	let policyStartDate2 = new Date(2020, 4, 17);
+	let policy2 = copmanyInstance.sellPolicy('Garage', policyStartDate2, 4, [fireRisk,theftRisk]);
+
+	expect(copmanyInstance.soldPolicies.length).toBe(1);
+})
+
+test('can sell many policies with different effective periods',() => {
+	let policyStartDate2 = new Date(2021, 5, 1);
+	let policy2 = copmanyInstance.sellPolicy('Garage', policyStartDate2, 4, [fireRisk,theftRisk]);
+
+	let policyStartDate3 = new Date(2022, 2, 2);
+	let policy3 = copmanyInstance.sellPolicy('Garage', policyStartDate3, 6, [theftRisk]);
+
+	let policyStartDate4 = new Date(2023, 8, 22);
+	let policy4 = copmanyInstance.sellPolicy('Garage', policyStartDate4, 1, [fireRisk]);
+
+	expect(copmanyInstance.soldPolicies.length).toBe(4);
+})
+
+test('can sell two policies with the same effective period if insurance objects are different',() => {
+	let policy2 = copmanyInstance.sellPolicy('House', policyStartDate, 12, [fireRisk,theftRisk]);
+	expect(copmanyInstance.soldPolicies.length).toBe(5);
+})
+
+
