@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +8,13 @@
 </head>
 <body>
 <script>
-//let let let...
- fireRisk = new Risk('Fire', 50);
- theftRisk = new Risk('Theft', 100);
- availableRisks = [fireRisk, theftRisk];
- company = new InsuranceCompany();
- company.setAvailableRisks(availableRisks);
- policyStartDate = new Date(2019, 0, 1); //the argument 'monthIndex' is 0-based. This means that January = 0 and December = 11.
- policy = company.sellPolicy('Garage', policyStartDate, 12, [theftRisk]);
-
+let fireRisk = new Risk('Fire', 50);
+let theftRisk = new Risk('Theft', 100);
+let availableRisks = [fireRisk, theftRisk];
+let company = new InsuranceCompany();
+company.setAvailableRisks(availableRisks);
+let policyStartDate = new Date(2019, 0, 1); //the argument 'monthIndex' is 0-based. This means that January = 0 and December = 11.
+let policy = company.sellPolicy('Garage', policyStartDate, 12, [theftRisk]);
 console.info(`Insured object name is '${policy.nameOfInsuredObject}' and should be 'Garage'.`);
 console.info(`Policy end date is '${policy.validTill}' and should be '2019-12-31'.`);
 console.info(`Policy premium is '${policy.premium}' and should be 100.`);

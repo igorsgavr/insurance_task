@@ -1,6 +1,5 @@
 const { InsuranceCompany, Risk, Policy } = require('./script.js');
 
-
 test('company set name',() => {
 	let copmanyInstance = new InsuranceCompany('abc');
 	expect(copmanyInstance._name).toBeTruthy()
@@ -46,7 +45,6 @@ test('get available risks',() => {
 	expect(copmanyInstance.availableRisks).toEqual([{_name: 'storm', _yearlyPrice: 90}, {_name: 'fire', _yearlyPrice: 115}]);
 })
 
-
 let fireRisk = new Risk('Fire', 50);
 let theftRisk = new Risk('Theft', 100);
 let availableRisks = [fireRisk, theftRisk];
@@ -74,34 +72,12 @@ test('policy get valid from Date',() => {
 })
 
 test('policy get valid till Date',() => {
-	expect(policy.validTill.toString()).toContain('Dec 31 2020'); //will compare Strings instead of Date objects to avoid native js 'one day off' bug
+	expect(policy.validTill.toString()).toContain('2020-12-31'); //will compare Strings instead of Date objects to avoid native js 'one day off' bug
 })
 
 test('policy get current risks array',() => {
 	expect(policy.insuredRisks).toEqual([{_name: 'Fire', _yearlyPrice: 50}, {_name: 'Theft', _yearlyPrice: 100}]);
 })
-
-/*
-
-test('get policy for "Garage" object for 5 March 2019',() => {
-	var dateMarch = new Date(2019, 4, 5);
-	expect(copmanyInstance.getPolicy('Garage',dateMarch)).not.toHaveLength(0);
-})
-
-test('company get all sold policies',() => {
-	let date1 = new Date(2019, 2, 27);
-	let date2 = new Date(2019, 4, 18);
-	let policy2 = copmanyInstance.sellPolicy('Garage', date1, 1, [fireRisk]);
-	let policy3 = copmanyInstance.sellPolicy('Garage', date2, 3, [fireRisk,theftRisk]);
-
-	expect(copmanyInstance.soldPolicies).toHaveLength(3);
-})
-
-test('get policy for "Garage" object for 5 March 2019',() => {
-	var dateMarch = new Date(2019, 4, 5);
-	expect(copmanyInstance.getPolicy('Garage',dateMarch)).not.toHaveLength(0);
-})
-*/
 
 test('can not sell two policies with the same effective period',() => {
 	let policy2 = copmanyInstance.sellPolicy('Garage', policyStartDate, 12, [fireRisk,theftRisk]);
@@ -134,3 +110,67 @@ test('can sell two policies with the same effective period if insurance objects 
 })
 
 
+test('calculate premium for full year',() => {
+	expect(policy.premium).toBe(150);
+})
+
+test('calculate premium for 4 months',() => {
+	let policyStartDate2 = new Date(2024, 4, 17);
+	let policy2 = copmanyInstance.sellPolicy('Garage', policyStartDate2, 4, [fireRisk,theftRisk]);
+
+	expect(policy2.premium).toBe(50);
+})
+
+test('calculate premium for 11 months with odd yearly sum',() => {
+	let policyStartDate2 = new Date(2025, 4, 17);
+	let floodRisk = new Risk('Flood', 133);
+	copmanyInstance.setAvailableRisks(floodRisk);
+	let policy2 = copmanyInstance.sellPolicy('Garage', policyStartDate2, 11, [floodRisk]);
+
+	expect(policy2.premium).toBe(122);
+})
+
+test('get policy for "Garage" object for 5 May 2020',() => {
+	let dateMay = new Date(2020, 4, 5);
+	expect(copmanyInstance.getPolicy('Garage', dateMay)).toHaveProperty('_nameOfInsuredObject','Garage');
+})
+
+test('add risk after policy is sold to the "Garage" object with policy, starting 17-05-2026 ',() => {
+	let policyStartDate2 = new Date(2026, 4, 17);
+	let floodRisk = new Risk('Flood', 133);
+	let policy2 = copmanyInstance.sellPolicy('Garage', policyStartDate2, 11, [fireRisk,theftRisk]);
+
+	copmanyInstance.addRisk('Garage', floodRisk, policyStartDate2); //find policy with name 'Garage' and start day 17-05-2026 and add risk
+
+	expect(policy2.insuredRisks.length).toBe(3);
+})
+
+test('premium price with later added risk must be recalculated',() => {
+	let policyStartDate2 = new Date(2027, 4, 17);
+	let floodRisk = new Risk('Flood', 40);
+	let policy2 = copmanyInstance.sellPolicy('Garage', policyStartDate2, 6, [fireRisk,theftRisk]);
+
+	copmanyInstance.addRisk('Garage', floodRisk, policyStartDate2);
+
+	expect(policy2.premium).toBe(95);
+})
+
+test('policy date can not be in the past',() => {
+	let incorrectDate = new Date(2000, 10, 30);
+	let policyInvalid = copmanyInstance.sellPolicy('Office', incorrectDate, 2, theftRisk);
+
+	expect(policyInvalid).toBeUndefined();
+})
+
+test('risk date can not be in the past ',() => {
+	let riskDate = new Date(1998, 2, 25);
+	expect(copmanyInstance.addRisk('Garage', theftRisk, riskDate)).toBeFalsy();
+})
+
+test('can not sell policy with risk which is not in available list',() => {
+	let incorrectDate = new Date(2030, 10, 30);
+	let newrisk = new Risk('newrisk', 250);
+	let policyNewRisk = copmanyInstance.sellPolicy('Office', incorrectDate, 2, newrisk);
+
+	expect(policyNewRisk).toBeUndefined();
+})

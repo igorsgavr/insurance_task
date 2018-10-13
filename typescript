@@ -33210,4 +33210,1053 @@ log[22m [2mscript.js:58[22m
 
 [0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
 [K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[32m1 passed[39m[22m, 1 total
-[1mTests:       [22m[1m[32m16 passe
+[1mTests:       [22m[1m[32m16 passed[39m[22m, 16 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        1.418s
+[2mRan all test suites[22m[2m.[22m
+]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ 
+]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   insurance.html[m
+	[31mmodified:   script.js[m
+	[31mmodified:   script.test.js[m
+	[31mmodified:   typescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ git add .
+g]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ git cm[Kommit - m[K[Km 'in progress[K[K[K[K[K[K[K[K[K[K[Kvalidation in progress'
+[master 5d05738] validation in progress
+ 4 files changed, 26029 insertions(+), 44 deletions(-)
+]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': igorsgavr
+Password for 'https://igorsgavr@github.com': 
+Counting objects: 1   Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 116.83 KiB | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  33% (1/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/igorsgavr/insurance_task.git
+   c006973..5d05738  master -> master
+]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ git pushcommit -m 'validation in progress'push[Kcommit -m 'validation in progress'add .[Kstatus[2Pnpm test[K[K[K[K[K[K[K[Knpm test
+
+> insurance@1.0.0 test /home/igor/Desktop/insurance
+> jest
+
+[1m[2mDetermining test suites to run...[1m[22m[999D[K
+[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[0m[7m[1m[32m PASS [39m[22m[27m[0m [2m./[22m[1mscript.test.js[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany set name (6ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany get name (3ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk construct (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get yearly price[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mset available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mget available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2msell policy (7ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get object name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid from Date[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid till Date (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get current risks array[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell two policies with the same effective period (118ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell policy with effective period inside other policy period (7ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell many policies with different effective periods[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell two policies with the same effective period if insurance objects are different[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[32m1 passed[39m[22m, 1 total
+[1mTests:       [22m[1m[32m16 passed[39m[22m, 16 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        [1m[33m12.874s[39m[22m
+[2mRan all test suites[22m[2m.[22m
+]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ npm test
+
+> insurance@1.0.0 test /home/igor/Desktop/insurance
+> jest
+
+[1m[2mDetermining test suites to run...[1m[22m[999D[K
+[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2m./[22m[1mscript.test.js[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany set name (7ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany get name (3ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk construct (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get yearly price (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mset available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mget available risks (3ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2msell policy (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get object name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid from Date (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid till Date (2ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get current risks array (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell two policies with the same effective period (125ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell policy with effective period inside other policy period (7ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell many policies with different effective periods[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell two policies with the same effective period if insurance objects are different (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [31m✕[39m [2mcalculate premium (23ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[1m[31m  [1m● [1mcalculate premium[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m100[39m
+    Received: [31m2[39m
+[2m[22m
+[2m    [0m [90m 136 | [39m[0m[22m
+[2m    [0m [90m 137 | [39mtest([32m'calculate premium'[39m[33m,[39m() [33m=>[39m {[0m[22m
+[2m    [0m[31m[1m>[2m[39m[90m 138 | [39m	expect(policy[33m.[39mpremium)[33m.[39mtoBe([35m100[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m	                       [31m[1m^[2m[39m[0m[22m
+[2m    [0m [90m 139 | [39m})[0m[22m
+[2m    [0m [90m 140 | [39m[0m[22m
+[2m    [0m [90m 141 | [39m[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([2m[0m[36mscript.test.js[39m[0m[2m:138:25)[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[31m1 failed[39m[22m, 1 total
+[1mTests:       [22m[1m[31m1 failed[39m[22m, [1m[32m16 passed[39m[22m, 17 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        [1m[33m11.573s[39m[22m
+[2mRan all test suites[22m[2m.[22m
+[37;40mnpm[0m [0m[31;  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[31m1 failed[39m[22m, 1 total
+[1mTests:       [22m[1m[31m1 failed[39m[22m, [1m[32m16 passed[39m[22m, 17 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        [1m[33m11.573s[39m[22m
+[2mRan all test suites[22m[2m.[22m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Test failed.  See above for more details.
+[0m]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ npm test
+
+> insurance@1.0.0 test /home/igor/Desktop/insurance
+> jest
+
+[1m[2mDetermining test suites to run...[1m[22m[999D[K
+[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2m./[22m[1mscript.test.js[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany set name (4ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany get name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk construct[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get yearly price[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mset available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mget available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2msell policy (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get object name[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid from Date[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid till Date (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get current risks array (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell two policies with the same effective period (22ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell policy with effective period inside other policy period (5ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell many policies with different effective periods[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell two policies with the same effective period if insurance objects are different[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [31m✕[39m [2mcalculate premium (15ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[1m[31m  [1m● [1mcalculate premium[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m) // Object.is equality[2m    [0m [90m 141 | [39m[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([2m[0m[36mscript.test.js[39m[0m[2m:138:25)[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[31m1 failed[39m[22m, 1 total
+[1mTests:       [22m[1m[31m1 failed[39m[22m, [1m[32m16 passed[39m[22m, 17 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        1.402s, estimated 4s
+[2mRan all test suites[22m[2m.[22m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Test failed.  See above for more details.
+[0m]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ =npm test
+
+> insurance@1.0.0 test /home/igor/Desktop/insurance
+> jest
+
+[1m[2mDetermining test suites to run...[1m[22m[999D[K
+[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[0m[7m[1m[32m PASS [39m[22m[27m[0m [2m./[22m[1mscript.test.js[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany set name (4ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany get name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk construct (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get name[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get yearly price (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mset available risks[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mget available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2msell policy (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get object name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid from Date[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid till Date (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get current risks array[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell two policies with the same effective period (22ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell policy with effective period inside other policy period (7ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell many policies with different effective periods[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell two policies with the same effective period if insurance objects are different (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcalculate premium[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[32m1 passed[39m[22m, 1 total
+[1mTests:       [22m[1m[32m17 passed[39m[22m, 17 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        1.464s
+[2mRan all test suites[22m[2m.[22m
+]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ npm test
+
+> insurance@1.0.0 test /home/igor/Desktop/insurance
+> jest
+
+[1m[2mDetermining test suites to run...[1m[22m[999D[K
+[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2m./[22m[1mscript.test.js[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany set name (5ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany get name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk construct (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get name[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get yearly price (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mset available risks[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mget available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2msell policy (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get object name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid from Date[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid till Date (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get current risks array (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell two policies with the same effective period (16ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell policy with effective period inside other policy period (6ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell many policies with different effective periods[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell two policies with the same effective period if insurance objects are different[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [31m✕[39m [2mcalculate premium for full year (17ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [31m✕[39m [2mcalculate premium for 4 months (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[1m[31m  [1m● [1mcalculate premium for full year[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m150[39m
+    Received: [31mNaN[39m
+[2m[22m
+[2m    [0m [90m 136 | [39m[0m[22m
+[2m    [0m [90m 137 | [39mtest([32m'calculate premium for full year'[39m[33m,[39m() [33m=>[39m {[0m[22m
+[2m    [0m[31m[1m>[2m[39m[90m 138 | [39m	expect(policy[33m.[39mpremium)[33m.[39mtoBe([35m150[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m	                       [31m[1m^[2m[39m[0m[22m
+[2m    [0m [90m 139 | [39m})[0m[22m
+[2m    [0m [90m 140 | [39m[0m[22m
+[2m    [0m [90m 141 | [39mtest([32m'calculate premium for 4 months'[39m[33m,[39m() [33m=>[39m {[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([2m[0m[36mscript.test.js[39m[0m[2m:138:25)[2m[22m
+
+[1m[31m  [1m● [1mcalculate premium for 4 months[39m[22m
+
+    ReferenceError: policy2 is not defined
+[2m[22m
+[2m    [0m [90m 140 | [39m[0m[22m
+[2m    [0m [90m 141 | [39mtest([32m'calculate premium for 4 months'[39m[33m,[39m() [33m=>[39m {[0m[22m
+[2m    [0m[31m[1m>[2m[39m[90m 142 | [39m	expect(policy2[33m.[39mpremium)[33m.[39mtoBe([35m37.5[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m	       [31m[1m^[2m[39m[0m[22m
+[2m    [0m [90m 143 | [39m})[0m[22m
+[2m    [0m [90m 144 | [39m[0m[22m
+[2m    [0m [90m 145 | [39m[0m[22m
+[2m[22m
+[2m      [2mat Object.policy2 ([2m[0m[36mscript.test.js[39m[0m[2m:142:9)[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[31m1 failed[39m[22m, 1 total
+[1mTests:       [22m[1m[31m2 failed[39m[22m, [1m[32m16 passed[39m[22m, 18 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        1.627s
+[2mRan all test suites[22m[2m.[22m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Test failed.  See above for more details.
+[0m]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ npm test
+
+> insurance@1.0.0 test /home/igor/Desktop/insurance
+> jest
+
+[1m[2mDetermining test suites to run...[1m[22m[999D[K
+[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2m./[22m[1mscript.test.js[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany set name (5ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany get name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk construct (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get name[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get yearly price (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mset available risks[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mget available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2msell policy (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get object name[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid from Date (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid till Date[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get current risks array (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell two policies with the same effective period (22ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell policy with effective period inside other policy period (6ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell many policies with different effective periods (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell two policies with the same effective period if insurance objects are different[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [31m✕[39m [2mcalculate premium for full year (14ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [31m✕[39m [2mcalculate premium for 4 months (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[1m[31m  [1m● [1mcalculate premium for full year[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m150[39m
+    Received: [31mNaN[39m
+[2m[22m
+[2m    [0m [90m 136 | [39m[0m[22m
+[2m    [0m [90m 137 | [39mtest([32m'calculate premium for full year'[39m[33m,[39m() [33m=>[39m {[0m[22m
+[2m    [0m[31m[1m>[2m[39m[90m 138 | [39m	expect(policy[33m.[39mpremium)[33m.[39mtoBe([35m150[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m	                       [31m[1m^[2m[39m[0m[22m
+[2m    [0m [90m 139 | [39m})[0m[22m
+[2m    [0m [90m 140 | [39m[0m[22m
+[2m    [0m [90m 141 | [39mtest([32m'calculate premium for 4 months'[39m[33m,[39m() [33m=>[39m {[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([2m[0m[36mscript.test.js[39m[0m[2m:138:25)[2m[22m
+
+[1m[31m  [1m● [1mcalculate premium for 4 months[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m37.5[39m
+    Received: [31mNaN[39m
+[2m[22m
+[2m    [0m [90m 143 | [39m	let policy2 [33m=[39m copmanyInstance[33m.[39msellPolicy([32m'Garage'[39m[33m,[39m policyStartDate2[33m,[39m [35m4[39m[33m,[39m [fireRisk[33m,[39mtheftRisk])[33m;[39m[0m[22m
+[2m    [0m [90m 144 | [39m[0m[22m
+[2m    [0m[31m[1m>[2m[39m[90m 145 | [39m	expect(policy2[33m.[39mpremium)[33m.[39mtoBe([35m37.5[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m	                        [31m[1m^[2m[39m[0m[22m
+[2m    [0m [90m 146 | [39m})[0m[22m
+[2m    [0m [90m 147 | [39m[0m[22m
+[2m    [0m [90m 148 | [39m[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([2m[0m[36mscript.test.js[39m[0m[2m:145:26)[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[31m1 failed[39m[22m, 1 total
+[1mTests:       [22m[1m[31m2 failed[39m[22m, [1m[32m16 passed[39m[22m, 18 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        1.437s, estimated 2s
+[2mRan all test suites[22m[2m.[22m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Test failed.  See above for more details.
+[0m]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ npm test
+
+> insurance@1.0.0 test /home/igor/Desktop/insurance
+> jest
+
+[1m[2mDetermining test suites to run...[1m[22m[999D[K
+[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2m./[22m[1mscript.test.js[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany set name (4ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany get name (2ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk construct[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get yearly price[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mset available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mget available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2msell policy (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get object name[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid from Date[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid till Date (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get current risks array (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell two policies with the same effective period (16ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell policy with effective period inside other policy period (4ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell many policies with different effective periods (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell two policies with the same effective period if insurance objects are different (6ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [31m✕[39m [2mcalculate premium for full year (15ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [31m✕[39m [2mcalculate premium for 4 months (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[1m[31m  [1m● [1mcalculate premium for full year[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m150[39m
+    Received: [31mNaN[39m
+[2m[22m
+[2m    [0m [90m 136 | [39m[0m[22m
+[2m    [0m [90m 137 | [39mtest([32m'calculate premium for full year'[39m[33m,[39m() [33m=>[39m {[0m[22m
+[2m    [0m[31m[1m>[2m[39m[90m 138 | [39m	expect(policy[33m.[39mpremium)[33m.[39mtoBe([35m150[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m	                       [31m[1m^[2m[39m[0m[22m
+[2m    [0m [90m 139 | [39m})[0m[22m
+[2m    [0m [90m 140 | [39m[0m[22m
+[2m    [0m [90m 141 | [39mtest([32m'calculate premium for 4 months'[39m[33m,[39m() [33m=>[39m {[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([2m[0m[36mscript.test.js[39m[0m[2m:138:25)[2m[22m
+
+[1m[31m  [1m● [1mcalculate premium for 4 months[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m37.5[39m
+    Received: [31mNaN[39m
+[2m[22m
+[2m    [0m [90m 143 | [39m	let policy2 [33m=[39m copmanyInstance[33m.[39msellPolicy([32m'Garage'[39m[33m,[39m policyStartDate2[33m,[39m [35m4[39m[33m,[39m [fireRisk[33m,[39mtheftRisk])[33m;[39m[0m[22m
+[2m    [0m [90m 144 | [39m[0m[22m
+[2m    [0m[31m[1m>[2m[39m[90m 145 | [39m	expect(policy2[33m.[39mpremium)[33m.[39mtoBe([35m37.5[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m	                        [31m[1m^[2m[39m[0m[22m
+[2m    [0m [90m 146 | [39m})[0m[22m
+[2m    [0m [90m 147 | [39m[0m[22m
+[2m    [0m [90m 148 | [39m[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([2m[0m[36mscript.test.js[39m[0m[2m:145:26)[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[31m1 failed[39m[22m, 1 total
+[1mTests:       [22m[1m[31m2 failed[39m[22m, [1m[32m16 passed[39m[22m, 18 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        1.386s
+[2mRan all test suites[22m[2m.[22m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Test failed.  See above for more details.
+[0m]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ npm test
+
+> insurance@1.0.0 test /home/igor/Desktop/insurance
+> jest
+
+[1m[2mDetermining test suites to run...[1m[22m[999D[K
+[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2m./[22m[1mscript.test.js[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany set name (4ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany get name (2ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk construct (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get yearly price[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk construct (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get yearly price[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mset available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mget available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2msell policy (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get object name[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid from Date (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid till Date[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get current risks array (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell two policies with the same effective period (16ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell policy with effective period inside other policy period (12ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell many policies with different effective periods[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell two policies with the same effective period if insurance objects are different[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [31m✕[39m [2mcalculate premium for full year (15ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [31m✕[39m [2mcalculate premium for 4 months (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[1m[31m  [1m● [1mcalculate premium for full year[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m150[39m
+    Received: [31mNaN[39m
+[2m[22m
+[2m    [0m [90m 136 | [39m[0m[22m
+[2m    [0m [90m 137 | [39mtest([32m'calculate premium for full year'[39m[33m,[39m() [33m=>[39m {[0m[22m
+[2m    [0m[31m[1m>[2m[39m[90m 138 | [39m	expect(policy[33m.[39mpremium)[33m.[39mtoBe([35m150[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m	                       [31m[1m^[2m[39m[0m[22m
+[2m    [0m [90m 139 | [39m})[0m[22m
+[2m    [0m [90m 140 | [39m[0m[22m
+[2m    [0m [90m 141 | [39mtest([32m'calculate premium for 4 months'[39m[33m,[39m() [33m=>[39m {[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([2m[0m[36mscript.test.js[39m[0m[2m:138:25)[2m[22m
+
+[1m[31m  [1m● [1mcalculate premium for 4 months[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m37.5[39m
+    Received: [31mNaN[39m
+[2m[22m
+[2m    [0m [90m 143 | [39m	let policy2 [33m=[39m copmanyInstance[33m.[39msellPolicy([32m'Garage'   [2mat Object.toBe ([2m[0m[36mscript.test.js[39m[0m[2m:145:26)[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[31m1 failed[39m[22m, 1 total
+[1mTests:       [22m[1m[31m2 failed[39m[22m, [1m[32m16 passed[39m[22m, 18 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        1.445s
+[2mRan all test suites[22m[2m.[22m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Test failed.  See above for more details.
+[0m]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ npm test
+
+> insurance@1.0.0 test /home/igor/Desktop/insurance
+> jest
+
+[1m[2mDetermining test suites to run...[1m[22m[999D[K
+[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2m./[22m[1mscript.test.js[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany set name (4ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcompany get name (2ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk construct[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get name (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mrisk get yearly price[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mset available risks[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mget available risks (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2msell policy (2ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get object name[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid from Date (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get valid till Date[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mpolicy get current risks array (1ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell two policies with the same effective period (22ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan not sell policy with effective period inside other policy period (7ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell many policies with different effective periods[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [32m✓[39m [2mcan sell two policies with the same effective period if insurance objects are different[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [31m✕[39m [2mcalculate premium for full year (37ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A  [31m✕[39m [2mcalculate premium for 4 months (23ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[1m[31m  [1m● [1mcalculate premium for full year[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m150[39m
+    Received: [31mNaN[39m
+[2m[22m
+[2m    [0m [90m 136 | [39m[0m[22m
+[2m    [0m [90m 137 | [39mtest([32m'calculate premium for full year'[39m[33m,[39m() [33m=>[39m {[0m[22m
+[2m    [0m[31m[1m>[2m[39m[90m 138 | [39m	expect(policy[33m.[39mpremium)[33m.[39mtoBe([35m150[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m	                       [31m[1m^[2m[39m[0m[22m
+[2m    [0m [90m 139 | [39m})[0m[22m
+[2m    [0m [90m 140 | [39m[0m[22m
+[2m    [0m [90m 141 | [39mtest([32m'calculate premium for 4 months'[39m[33m,[39m() [33m=>[39m {[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([2m[0m[36mscript.test.js[39m[0m[2m:138:25)[2m[22m
+
+[1m[31m  [1m● [1mcalculate premium for 4 months[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m37.5[39m
+    Received: [31mNaN[39m
+[2m[22m
+[2m    [0m [90m 143 | [39m	let policy2 [33m=[39m copmanyInstance[33m.[39msellPolicy([32m'Garage'[39m[33m,[39m policyStartDate2[33m,[39m [35m4[39m[33m,[39m [fireRisk[33m,[39mtheftRisk])[33m;[39m[0m[22m
+[2m    [0m [90m 144 | [39m[0m[22m
+[2m    [0m[31m[1m>[2m[39m[90m 145 | [39m	expect(policy2[33m.[39mpremium)[33m.[39mtoBe([35m37.5[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m	                        [31m[1m^[2m[39m[0m[22m
+[2m    [0m [90m 146 | [39m})[0m[22m
+[2m    [0m [90m 147 | [39m[0m[22m
+[2m    [0m [90m 148 | [39m[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([2m[0m[36mscript.test.js[39m[0m[2m:145:26)[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+[999D[K  [2mconsole.log[22m [2mscript.js:72[22m
+    error: Effective periods of different policies overlap each other
+
+[999D[K  [2mconsole.log[22m [2mscript.js:146[22m
+    ---
+
+[999D[K  [2mconsole.log[22m [2mscript.js:147[22m
+    50
+
+[999D[K  [2mconsole.log[22m [2mscript.js:148[22m
+    undefined
+
+[999D[K  [2mconsole.log[22m [2mscript.js:149[22m
+    ---
+
+[999D[K  [2mconsole.log[22m [2mscript.js:146[22m
+    ---
+
+[999D[K  [2mconsole.log[22m [2mscript.js:147[22m
+    100
+
+[999D[K  [2mconsole.log[22m [2mscript.js:148[22m
+    undefined
+
+[999D[K  [2mconsole.log[22m [2mscript.js:149[22m
+    ---
+
+[999D[K  [2mconsole.log[22m [2mscript.js:146[22m
+    ---
+
+[999D[K  [2mconsole.log[22m [2mscript.js:147[22m
+    50
+
+[999D[K  [2mconsole.log[22m [2mscript.js:148[22m
+    undefined
+
+[999D[K  [2mconsole.log[22m [2mscript.js:149[22m
+    ---
+
+[999D[K  [2mconsole.log[22m [2mscript.js:146[22m
+    ---
+
+[999D[K  [2mconsole.log[22m [2mscript.js:147[22m
+    100
+
+[999D[K  [2mconsole.log[22m [2mscript.js:148[22m
+    undefined
+
+[999D[K  [2mconsole.log[22m [2mscript.js:149[22m
+    ---
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [2m./[22m[1mscript.test.js[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[31m1 failed[39m[22m, 1 total
+[1mTests:       [22m[1m[31m2 failed[39m[22m, [1m[32m16 passed[39m[22m, 18 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        1.735s
+[2mRan all test suites[22m[2m.[22m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Test failed.  See above for more details.
+[0m]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ exit
+
+Script done on piektdiena, 2018. gada 12. oktobris, plkst. 16 un 07
+[K[1mTest Suites: [22m[1m[31m1 failed[39m[22m, 1 total
+[1mTests:       [22m[1m[31m2 failed[39m[22m, [1m[32m16 passed[39m[22m, 18 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        1.735s
+[2mRan all test suites[22m[2m.[22m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Test failed.  See above for more details.
+[0m]0;igor@igor-HP-ProBook-450-G1: ~/Desktop/insuranceigor@igor-HP-ProBook-450-G1:~/Desktop/insurance$ exit
