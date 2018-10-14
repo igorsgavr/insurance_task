@@ -29,12 +29,26 @@ class InsuranceCompany {
 	// Set list of the risks that can be insured. List can be updated at any time.
 	// risks: Array of Risks or single Risk
 	setAvailableRisks(risks) {
+		this._risks = [];
 		if(!(risks instanceof Array)) this._risks.push(risks); //if only one element is passed, will not use foreach
 		else {
 			risks.forEach(function(elem){
 				this._risks.push(elem);
 			}, this);
 		}
+	}
+
+	// Return true if Risk is available
+	// risks: Array of Risks 
+	isAvailable(risks) {
+		for (let risk of Object.keys(risks)) {
+		    let currentRisk = risks[risk];
+			if (!this.availableRisks.includes(currentRisk)) { // If one of selected risks is not available reject to sell policy
+				return false;
+			}
+		}
+
+		return true;
 	}
 	
 	// Sell the policy.
@@ -48,13 +62,7 @@ class InsuranceCompany {
 			return;
 		}
 
-		for (let risk of Object.keys(selectedRisks)) {
-		    let currentRisk = selectedRisks[risk];
-			if (!this.availableRisks.includes(currentRisk)) { // If one of selected risks is not available reject to sell policy
-				console.log('error: Risk is currently unavailable');
-				return;
-			}
-		}
+		if(!this.isAvailable(selectedRisks)) return; //refuse to sell policy if risk is not available
 
 		let overlap = false;
 		let policyClass = new Policy(); //create an instance of class to access calculateValidTill method
@@ -112,6 +120,8 @@ class InsuranceCompany {
 	// risk: Risk that must be added
 	// validFrom: Date when _policy_ becomes active. Can not be in the past
 	addRisk(nameOfInsuredObject, risk, validFrom) {
+		if(!this.isAvailable([risk])) return; //refuse to add risk if not available
+
 		if(dateNotPast(validFrom)) {
 			let currentPolicy = this.getPolicy(nameOfInsuredObject, validFrom);
 			currentPolicy._selectedRisks.push(risk);
@@ -224,6 +234,7 @@ function dateNotPast(date) {
 	return true;
 }
 
+// Export classes for Jest testing framework (script.test.js)
 module.exports = {
   InsuranceCompany : InsuranceCompany,
   Risk : Risk,
