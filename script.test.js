@@ -15,7 +15,7 @@ test('risk construct',() => {
 	expect(riskInstance).toBeTruthy()
 })
 
-test('risk get name',() => {
+test('Risk: get name()',() => {
 	let riskInstance = new Risk('fire',150);
 	expect(riskInstance.name).toBe('fire')
 })
@@ -46,13 +46,15 @@ test('get available risks',() => {
 })
 
 // Create some repeatable objects outside test
-let fireRisk = new Risk('Fire', 50);
-let theftRisk = new Risk('Theft', 100);
-let availableRisks = [fireRisk, theftRisk];
-let copmanyInstance = new InsuranceCompany();
-copmanyInstance.setAvailableRisks(availableRisks);
-let policyStartDate = new Date(2020, 0, 1);
-let policy = copmanyInstance.sellPolicy('Garage', policyStartDate, 12, [fireRisk,theftRisk]);
+beforeEach(() => {
+	fireRisk = new Risk('Fire', 50);
+	theftRisk = new Risk('Theft', 100);
+	availableRisks = [fireRisk, theftRisk];
+	copmanyInstance = new InsuranceCompany();
+	copmanyInstance.setAvailableRisks(availableRisks);
+	policyStartDate = new Date(2020, 0, 1);
+	policy = copmanyInstance.sellPolicy('Garage', policyStartDate, 12, [fireRisk,theftRisk]);
+});
 
 test('sell policy',() => {
 	expect(policy).toMatchObject({

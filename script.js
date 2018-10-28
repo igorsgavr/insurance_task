@@ -110,6 +110,7 @@ class InsuranceCompany {
 			if (el.nameOfInsuredObject == nameOfInsuredObject && (efDateTime >= el.validFrom.getTime() && efDateTime <= el.validTillUnformatted.getTime())) {
 				toReturn = el;
 			}
+			return toReturn;
 		});
 
 		return toReturn;
